@@ -127,9 +127,10 @@ export default {
         <div class="my-6">
           <!-- Menu Category Item -->
           <div v-for="category in data.data" :key="category">
-            <category :title="category.title" class="" />
+            <category :title="category.title" class="my-4 border-y" />
+
             <div
-              class="mb-2 grid max-w-4xl grid-cols-1 items-start gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
+              class="mx-4 my-2 grid max-w-4xl grid-cols-1 items-start gap-4 md:grid-cols-2 lg:mx-0 lg:grid-cols-2 xl:mx-0 xl:grid-cols-2"
             >
               <item
                 v-for="item in category.item"
@@ -140,7 +141,7 @@ export default {
                 :description="item.description"
               />
             </div>
-            <hr class="mx-2 my-4 border-gray-300" />
+            <!--<hr class="mx-2 my-4 border-gray-300" />-->
           </div>
         </div>
       </div>

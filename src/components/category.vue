@@ -9,7 +9,7 @@ export default {
 }
 </script>
 <template>
-  <div class="mb-2 flex w-full items-center justify-center gap-4 p-2 text-lg font-bold uppercase">
+  <div class="flex w-full items-center justify-center gap-4 p-2 text-lg font-bold uppercase">
     <p class="text-center">{{ title }}</p>
   </div>
 </template>
